@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "weather-mcp-server"
+version = "0.1.0"
+description = "MCP Server for weather forecasts and weather warnings"
+authors = [
+    {name = "Weather MCP Server", email = "weather@example.com"}
+]
+dependencies = [
+    "fastmcp>=0.1.0",
+    "httpx>=0.25.0"
+]
+requires-python = ">=3.10"
+
+[tool.setuptools]
+py-modules = ["main"]  # または ["weather"] ←あなたのコード構成に応じて選択
